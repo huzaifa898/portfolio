@@ -1,9 +1,14 @@
 
 import './App.css';
+import Hero from './Compenets/Hero';
+import Navbar from './Compenets/Navbar';
 
 function App() {
   return (
-    <div className='text-4xl'>hello</div>
+    <>
+    <Navbar/>
+    <Hero/>
+    </>
   );
 }
 
