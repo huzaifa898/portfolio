@@ -1,5 +1,7 @@
 
 import './App.css';
+import Contact from './Compenets/Contact';
+import Footer from './Compenets/Footer';
 import Hero from './Compenets/Hero';
 import Navbar from './Compenets/Navbar';
 import Portfolio from './Compenets/Portfolio';
@@ -12,6 +14,8 @@ function App() {
     <Hero/>
     <Skills/>
     <Portfolio/>
+    <Contact/>
+    <Footer/>
     </>
   );
 }
