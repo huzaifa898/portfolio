@@ -10,8 +10,7 @@ import {
   DiMongodb,
   DiGithubBadge,
 } from "react-icons/di"
-import { Reveal } from 'react-awesome-reveal';
-
+import Reveal from "./Reveal"
 
 const skills = [
     {
