@@ -1,11 +1,10 @@
 import React from "react";
-import profilepic from "../Assets/profpic.png";
+import profilepic from "../Assets/profpic1.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
-  AiOutlineLink,
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import {
@@ -20,7 +19,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative">
+    <div className="mt-36 max-w-[1200px] mx-auto relative">
         <div className="grid md:grid-cols-2 place-items-center gap-8">
             <motion.div
             initial={{ opacity: 0, y: -50 }}
@@ -30,12 +29,11 @@ const Hero = () => {
             >
                 <TypeAnimation
                     sequence={[
-                        "Fullstack Dev",
+                        "Front End Developer",
                         1000,
-                        "Webdesigner",
+                        "UI&UX Desginer",
                         1000,
-                        "Consultant",
-                        1000
+                       
                     ]}
                     speed={50}
                     repeat={Infinity}
@@ -50,7 +48,7 @@ const Hero = () => {
                 className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
                 >
                     HEY, I AM <br/>
-                    <span className="text-purple-500">JOHN DOE</span>
+                    <span className="text-purple-500">HUZAIFA YOUSAFZAI</span>
                 </motion.p>
 
                 <motion.p
@@ -60,7 +58,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 1 }}
                 className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
                 >
-                    I am a passionate fullstack developer with over 5 years of experience.
+                    I am a passionate Front-End-Developer with over 1 years of experience.
                 </motion.p>
 
                 <motion.div
@@ -96,7 +94,7 @@ const Hero = () => {
 
             <motion.img 
                 src={profilepic}
-                className="w-[300px] md:w-[450px]"
+                className="w-[300px] md:w-[450px] object-cover"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -128,4 +126,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
