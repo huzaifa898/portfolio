@@ -2,7 +2,6 @@ import React from "react";
 import {
   AiFillLinkedin,
   AiFillGithub,
-  AiFillTwitterCircle,
   AiFillFacebook,
 } from "react-icons/ai";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";

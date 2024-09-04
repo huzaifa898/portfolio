@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className='max-w-[1300px] mx-auto  flex justify-between text-gray-200
         text-xl items-center px-12 h-20 font-serif'>
 
-            <a>Huzaifa Yousafzai</a>
+            <h3>Huzaifa Yousafzai</h3>
 
             <ul className='hidden md:flex gap-12 z-10 font-serif cursor-pointer'>
                 <li><Link to="skills" smooth={true} offset={50} duration={500}>SKILLS</Link></li>
