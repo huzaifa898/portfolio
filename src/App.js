@@ -1,7 +1,6 @@
 
 import './App.css';
 import Contact from './Compenets/Contact';
-import Experience from './Compenets/Experenice';
 import Footer from './Compenets/Footer';
 import Hero from './Compenets/Hero';
 import Navbar from './Compenets/Navbar';
