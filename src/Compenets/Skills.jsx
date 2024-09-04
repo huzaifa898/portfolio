@@ -6,9 +6,6 @@ import {
   DiBootstrap,
   DiJavascript1,
   DiReact,
-  DiNodejsSmall,
-  DiMongodb,
-  DiGithubBadge,
 } from "react-icons/di";
 import Reveal from "./Reveal";
 
@@ -30,9 +27,9 @@ const Skills = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 md:px-6 py-20" id="skills">
       <Reveal>
-        <h2 className="text-3xl font-bold text-gray-200 mb-8 text-center">Skills</h2>
-        <p className="text-center mb-12 text-gray-400">
-          I worked on various frontend and fullstack projects. Check them <a href="#" className="underline text-blue-500 hover:text-blue-400">here</a>.
+        <h2 className="text-3xl font-bold text-gray-200 mb-8 text-center font-serif">Skills</h2>
+        <p className="text-center mb-12 text-gray-400 font-serif">
+          I worked on various frontend and fullstack projects. Check them <a href="https://github.com/huzaifa898" className="underline text-blue-500 hover:text-blue-400">here</a>.
         </p>
 
         {/* Centering the skill card */}

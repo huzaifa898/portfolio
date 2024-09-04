@@ -64,8 +64,9 @@ const projects = [
 const Portfolio = () => {
     return (
         <div className='max-w-[1200px] mx-auto px-4 md:px-6 md:my-20' id="portfolio">
-            <h2 className='text-3xl font-bold text-gray-200 mb-8 text-center'>Portfolio</h2>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center'>
+            <h2 className='text-3xl font-serif text-gray-200 mb-8 text-center '>Projects</h2>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center font-serif'>
                 {projects.map((project, index) => (
                     <Reveal key={index}>
                         <div className='bg-gray-800 p-4 rounded-lg shadow-lg w-[450px] flex flex-col'>
