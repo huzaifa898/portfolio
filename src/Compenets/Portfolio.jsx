@@ -1,65 +1,62 @@
 import React from 'react';
-import project1 from "../Assets/project1.png";
-import project2 from "../Assets/project2.png";
-import project4 from "../Assets/project3.png";
-import project5 from "../Assets/project4.png";
-import project6 from "../Assets/project5.png";
+import project8 from '../Assets/project8.PNG';
+import project9 from "../Assets/project9.PNG";
+import project10 from "../Assets/project10.PNG";
+import project12 from "../Assets/project12.PNG";
+import project13 from "../Assets/project13.PNG";
+import project14 from  "../Assets/project14.PNG";
+
 import { AiOutlineGithub } from 'react-icons/ai';
 import Reveal from './Reveal';
 
 const projects = [
     {
-        img: project1,
+        img: project8,
         title: "Project #1",
-        description: "UI for frontend development using React.",
+        description: "This is my final year project",
         links: {
-            site: "#",
-            github: "#",
+            site: " https://huzaifa898.github.io/fyp",
+            github: "https://github.com/huzaifa898/fyp",
         },
     },
     {
-        img: project2,
+        img: project9,
         title: "Project #2",
-        description: "A fullstack application built with Node.js",
+        description: "A fullstack appliction for Jobless people",
         links: {
-            site: "#",
-            github: "#",
+            github: "https://github.com/huzaifa898/jobs-seeker",
         },
     },
     {
-        img: project4,
+        img: project10,
         title: "Project #3",
-        description: "An e-commerce platform with various features.",
+        description: "An Client Project For  a Company realted to Bussiness industry",
         links: {
-            site: "#",
-            github: "#",
+            github: "https://github.com/huzaifa898/client-pro1",
         },
     },
     {
-        img: project5,
+        img: project12,
         title: "Project #4",
-        description: "A mobile-friendly application using React Native.",
+        description: "An application for biscuits agency whom sales biscuits online",
         links: {
-            site: "#",
-            github: "#",
+            github: "https://github.com/huzaifa898/client-pro2",
         },
     },
     {
-        img: project6,
+        img: project13,
         title: "Project #5",
-        description: "A data visualization project using D3.js and other libraries.",
+        description: "A project for freelencer friend who is web developer",
         links: {
-            site: "#",
-            github: "#",
+            github: "https://github.com/huzaifa898/aness",
         },
     },
     {
-        img: project6,
+        img: project14,
         title: "Project #5",
-        description: "A data visualization project using D3.js and other libraries.",
+        description: "A project for freelencer friend who is web developer",
         links: {
-            site: "#",
-            github: "#",
+            github: "https://github.com/huzaifa898/my-task",
         },
     },
 ];
@@ -83,10 +80,6 @@ const Portfolio = () => {
                                 <h3 className='text-2xl font-semibold text-gray-200 mb-2'>{project.title}</h3>
                                 <p className='text-gray-300 mb-4'>{project.description}</p>
                                 <div className='flex space-x-4 mt-auto'>
-                                    <a href={project.links.site}
-                                        className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300'>
-                                        View Site
-                                    </a>
                                     <a href={project.links.github}
                                         className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300'>
                                         <AiOutlineGithub />

@@ -1,5 +1,5 @@
 import React from "react";
-import profilepic from "../Assets/profpic1.png";
+import profilepic3 from '../Assets/profpic3.png';
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
@@ -111,12 +111,16 @@ const Hero = () => {
         </motion.div>
 
         <motion.img
-          src={profilepic}
-          className="w-[300px] md:w-[450px] object-cover"
+          src={profilepic3}
+          className="w-[300px] md:w-[450px] object-cover border-none"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
+          style={{
+            filter: "brightness(0.9) contrast(0.85)",
+            borderRadius: "10px",  // Adding some subtle rounding to the corners
+          }}
         />
       </div>
 
