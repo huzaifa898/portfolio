@@ -1,29 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Reveal from "./Reveal";
 
 const Contact = () => {
+  const [formStatus, setFormStatus] = useState(""); // Feedback for success/error
+
   const sendEmail = (e) => {
     e.preventDefault(); // Prevents the default form submission behavior
 
+    // Validate the form
+    const name = e.target.name.value.trim();
+    const email = e.target.email.value.trim();
+    const message = e.target.message.value.trim();
+
+    if (!name || !email || !message) {
+      setFormStatus("Please fill out all fields.");
+      return;
+    }
+
     emailjs.sendForm('service_hhdws9n', 'template_df5ihjh', e.target, 'jr3P6Z5uHUxI4dbtn')
       .then((result) => {
-          alert("Message sent successfully!");
+        setFormStatus("Message sent successfully!");
       }, (error) => {
-          alert("Message failed to send. Please try again.");
+        setFormStatus("Message failed to send. Please try again.");
       });
+
+    e.target.reset(); // Reset form after submission
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen px-6 font-serif">
+    <div id="contact" className="relative flex items-center justify-center min-h-screen px-6 font-serif">
       <Reveal>
         <div className="relative flex flex-col items-center max-w-lg w-full p-8 rounded-xl shadow-2xl bg-white bg-opacity-80">
           <p className="text-gray-800 font-bold text-3xl mb-6">Let’s Connect!</p>
-          <form
-            onSubmit={sendEmail}
-            className="w-full space-y-6"
-            id="form"
-          >
+          <form onSubmit={sendEmail} className="w-full space-y-6" id="form">
             <input
               type="text"
               id="name"
@@ -53,6 +63,9 @@ const Contact = () => {
               Send Message
             </button>
           </form>
+          {formStatus && (
+            <p className="mt-4 text-center text-red-500">{formStatus}</p>
+          )}
         </div>
       </Reveal>
     </div>

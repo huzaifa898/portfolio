@@ -55,8 +55,8 @@ const Navbar = () => {
             className='fixed left-0 top-0 w-full min-h-screen bg-gray-900 z-40'
             >
                 <ul className='font-semibold text-4xl space-y-8 mt-24 text-center font-serif'>
-                    <li><Link to="skills" onClick={closeNav} smooth={true} offset={50} duration={500}>About</Link></li>
-                    <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={50} duration={500}>Portfolio</Link></li>
+                    <li><Link to="skills" onClick={closeNav} smooth={true} offset={50} duration={500}>Skills</Link></li>
+                    <li><Link to="portfolio" onClick={closeNav} smooth={true} offset={50} duration={500}>Projects</Link></li>
                     <li><Link to="contact" onClick={closeNav} smooth={true} offset={50} duration={500}>Contact</Link></li>
                     
                 </ul>
