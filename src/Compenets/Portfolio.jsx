@@ -13,16 +13,17 @@ const projects = [
     {
         img: project8,
         title: "Project #1",
-        description: "This is my final year project",
+        description: "This is my final year project Investor & Enterprenur Recommender  System",
+
         links: {
-            site: " https://huzaifa898.github.io/fyp",
+            site: "https://huzaifa898.github.io/fyp",
             github: "https://github.com/huzaifa898/fyp",
         },
     },
     {
         img: project9,
         title: "Project #2",
-        description: "A fullstack appliction for Jobless people",
+        description: "A fullstack application for Jobless people their they find their jobs",
         links: {
             github: "https://github.com/huzaifa898/jobs-seeker",
         },
@@ -30,7 +31,7 @@ const projects = [
     {
         img: project10,
         title: "Project #3",
-        description: "An Client Project For  a Company realted to Bussiness industry",
+        description: "A Client Project For a Company related to Business industry and constructions",
         links: {
             github: "https://github.com/huzaifa898/client-pro1",
         },
@@ -38,7 +39,7 @@ const projects = [
     {
         img: project12,
         title: "Project #4",
-        description: "An application for biscuits agency whom sales biscuits online",
+        description: "An application for biscuits agency who sell biscuits online",
         links: {
             github: "https://github.com/huzaifa898/client-pro2",
         },
@@ -46,15 +47,15 @@ const projects = [
     {
         img: project13,
         title: "Project #5",
-        description: "A project for freelencer friend who is web developer",
+        description: "A project for a freelancer friend who is a web developer",
         links: {
             github: "https://github.com/huzaifa898/aness",
         },
     },
     {
         img: project14,
-        title: "Project #5",
-        description: "A project for freelencer friend who is web developer",
+        title: "Project #6",
+        description: "Another project for a freelancer friend who is a web developer",
         links: {
             github: "https://github.com/huzaifa898/my-task",
         },
@@ -64,12 +65,12 @@ const projects = [
 const Portfolio = () => {
     return (
         <div className='max-w-[1200px] mx-auto px-4 md:px-6 md:my-20' id="portfolio">
-            <h2 className='text-3xl font-serif text-gray-200 mb-8 text-center '>Projects</h2>
+            <h2 className='text-3xl font-serif text-gray-200 mb-8 text-center'>Projects</h2>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center font-serif'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center font-serif'>
                 {projects.map((project, index) => (
                     <Reveal key={index}>
-                        <div className='bg-gray-800 p-4 rounded-lg shadow-lg w-[450px] flex flex-col'>
+                        <div className='bg-gray-800 p-4 rounded-lg shadow-lg w-full max-w-[350px] flex flex-col'>
                             <div className='mb-4'>
                                 <img
                                     src={project.img}
@@ -83,7 +84,7 @@ const Portfolio = () => {
                                 <div className='flex space-x-4 mt-auto'>
                                     <a href={project.links.github}
                                         className='px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300'>
-                                        <AiOutlineGithub />
+                                        <AiOutlineGithub size={20} />
                                     </a>
                                 </div>
                             </div>
