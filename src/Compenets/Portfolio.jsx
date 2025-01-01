@@ -22,19 +22,10 @@ const projects = [
     {
         img: project8,
         title: "Project #1",
-        description: "The investor and entrepreneur recommender system connects entrepreneurs with suitable investors based on mutual interests and project requirements. It leverages advanced algorithms to ensure personalized recommendations.```javascript
-import React from 'react';
-import project8 from '../Assets/project8.PNG';
-import new3 from '../Assets/new3.PNG';
-import new2 from "../Assets/new2.PNG";
-import project12 from "../Assets/project12.PNG";
-import project13 from "../Assets/project13.PNG";
-import project14 from "../Assets/project14.PNG";
-
-import { AiOutlineGithub } from 'react-icons/ai';
-import Reveal from './Reveal';
-
-const projects = [
+        description: "The investor and entrepreneur recommender system connects entrepreneurs with suitable investors based on mutual interests and project requirements. It leverages advanced algorithms to ensure personalized recommendations.",
+            links: {
+    }
+},
     {
         id: 1,
         img: new3,
